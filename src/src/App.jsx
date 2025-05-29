@@ -71,6 +71,29 @@ function App() {
           <button className="demo-btn" onClick={() => setImageUrl('https://cdn.aframe.io/360-image-gallery-boilerplate/img/chesapeake.jpg')}>عرض صورة بانورامية تجريبية</button>
           <button className="demo-btn" onClick={() => setImageUrl('https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg')}>إعادة الصورة الافتراضية</button>
         </section>
+        <section className="section">
+          <h2>فيديوهات عقارية مميزة</h2>
+          <video controls style={{width:'100%', borderRadius:'12px', boxShadow:'0 2px 12px #e3e7fd'}} poster="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+            متصفحك لا يدعم تشغيل الفيديو.
+          </video>
+          <p style={{fontSize:'0.95rem', color:'#666', marginTop:'0.5rem'}}>شاهد جولات حية لعقارات وقصور وفيلات حول العالم.</p>
+        </section>
+        <section className="section">
+          <h2>مشاركة عقارك أو فكرتك</h2>
+          <textarea placeholder="شارك فكرة، عقار، أو تجربة..." style={{width:'100%', minHeight:'70px', borderRadius:'8px', border:'1px solid #e3e7fd', padding:'0.7rem', fontSize:'1rem', marginBottom:'0.7rem'}}></textarea>
+          <button className="demo-btn">مشاركة</button>
+          <p style={{fontSize:'0.9rem', color:'#888'}}>شارك عقارك أو أفكارك مع مجتمع المنصة العالمي.</p>
+        </section>
+        <section className="section">
+          <h2>شكرات وتكريمات</h2>
+          <ul className="sections-list">
+            <li>شكر خاص لكل من يشارك عقاره أو فكرته</li>
+            <li>تكريم أفضل صور بانورامية كل شهر</li>
+            <li>جوائز لأفضل فيديو عقاري</li>
+            <li>شهادات تقدير للمستخدمين النشطين</li>
+          </ul>
+        </section>
       </div>
       <footer className="footer">
         <p>© {new Date().getFullYear()} منصة عقارات عالمية | تصميم وابتكار الذكاء الاصطناعي</p>
